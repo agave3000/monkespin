@@ -4,13 +4,13 @@ const stop_btn = document.getElementById("stop");
 
 var song = new Audio("./assets/monke.mp3");
 
-start_btn.addEventListener("click", function() {
+monke.onload = start_btn.addEventListener("click", function() {
     monke.src = "./assets/spin.gif";
     song.play();
     song.loop = true
 })
 
-stop_btn.addEventListener("click", function() {
+monke.onload = stop_btn.addEventListener("click", function() {
     monke.src = "./assets/static.png";
     song.pause();
     song.loop = false;
